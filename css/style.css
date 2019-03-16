@@ -1,0 +1,477 @@
+nav li {
+  display: inline;
+  padding-right: 40px;
+}
+
+ul{
+  text-align:center;
+}
+
+ul li a {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+}
+
+.text {
+  margin: 40px;
+}
+
+h1 {
+  font-family: 'Carter One', cursive;
+  font-size: 60px;
+  margin: 25px auto 10px auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  margin: 25px auto 10px auto;
+  text-align: center;
+}
+
+p{
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+}
+
+.center-text {
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.food {
+  margin-right: 40px;
+}
+
+.description {
+  width: 100%; /* min or max width, please dont grow past this point */
+  padding: 10px;
+  margin: 40px auto 40px auto;
+  text-align: center;
+}
+
+.current {
+  background-color: yellow;
+  font-weight: bold;
+  border-bottom: black solid 1px;
+}
+
+.skip {
+     position: absolute;
+     top: -1000px;
+     left: -1000px;
+     height: 1px;
+     width: 1px;
+     text-align: left;
+     overflow: hidden;
+ }
+
+ a.skip:active,
+ a.skip:focus,
+ a.skip:hover {
+     left: 0;
+     top: 0;
+     width: auto;
+     height: auto;
+     overflow: visible;
+ }
+
+
+
+ /* Images in 2x2 grid Section (About and Menu)*/
+ .two-by-two {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 5vw);
+  grid-gap: 15px;
+ }
+
+ .grid-image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .grid-item-1 {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 6;
+ }
+
+ .grid-item-2 {
+   grid-column-start: 3;
+   grid-column-end: 6;
+   grid-row-start: 1;
+   grid-row-end: 6;
+ }
+
+ .grid-item-3 {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 6;
+   grid-row-end: 12;
+ }
+
+ .grid-item-4 {
+   grid-column-start: 3;
+   grid-column-end: 6;
+   grid-row-start: 6;
+   grid-row-end: 12;
+ }
+
+
+/* Images in Laurel Section */
+.gallery {
+ display: grid;
+ grid-template-columns: repeat(8, 1fr);
+ grid-template-rows: repeat(15, 5vw);
+ grid-gap: 5px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .container > img{
+  width:300px;
+} */
+
+/* bear mural */
+.gallery-item-4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* bird mural */
+.gallery-item-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* looking up sign */
+.gallery-item-8 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+/* sign against blue sky */
+.gallery-item-5 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 15;
+}
+
+/* lion dancing */
+.gallery-item-9 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+
+/* laurel sign  */
+.gallery-item-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 11;
+}
+
+/* in front of stove profile*/
+.gallery-item-6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 11;
+}
+
+/* in front of stove with food*/
+.gallery-item-7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 11;
+  grid-row-end: 15;
+  transform: rotate(180deg);
+}
+
+/* cocktail sign*/
+.gallery-item-1 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 11;
+  grid-row-end: 15;
+}
+
+/* Hero Image */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.storefront {
+  background-image: url("../images/storefront.jpg");
+}
+
+.food {
+  background-image: url("../images/eggsand.jpg");
+}
+
+.sign {
+  background-image: url("../images/wallsign.jpg");
+}
+
+footer {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* all things with images in div named "content" */
+#content > img {
+  width: 300px;
+}
+
+/* rotate pictures on the about page */
+.rotate{
+  transform: rotate(180deg)
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(30, 5vw);
+    grid-gap: 5px;
+  }
+  /* Sign looking up */
+  .gallery-item-8 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 11;
+  }
+/* Sign against blue sky */
+  .gallery-item-5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 11;
+    grid-row-end: 20;
+  }
+  /* lion dancing */
+  .gallery-item-9 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 11;
+    grid-row-end: 20;
+  }
+
+  /* bear mural */
+  .gallery-item-4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 20;
+    grid-row-end: 25;
+  }
+
+  /* bird mural */
+  .gallery-item-3 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 25;
+    grid-row-end: 30;
+  }
+
+  /* laurel sign  */
+  .gallery-item-2 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 20;
+    grid-row-end: 30;
+  }
+
+  /* in front of stove profile*/
+  .gallery-item-6 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 30;
+    grid-row-end: 35;
+  }
+
+  /* in front of stove with food*/
+  .gallery-item-7 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 30;
+    grid-row-end: 35;
+}
+
+  .description {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  nav li {
+    display: inline-block;
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  /* Images in 2x2 grid Section About and Menu*/
+  .two-by-two {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(30, 5vw);
+   grid-gap: 15px;
+  }
+
+  .grid-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 10;
+  }
+
+  .grid-item-2 {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 10;
+    grid-row-end: 20;
+  }
+
+  .grid-item-3 {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 20;
+    grid-row-end: 20;
+  }
+
+  .grid-item-4 {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 20;
+    grid-row-end: 30;
+  }
+
+  /* Laurel Page  */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(45, 5vw);
+    grid-gap: 8px;
+  }
+  /* Sign looking up */
+  .gallery-item-8 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 9;
+  }
+/* Sign against blue sky */
+  .gallery-item-5 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 18;
+  }
+
+  /* bear mural */
+  .gallery-item-4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 18;
+    grid-row-end: 22;
+  }
+
+  /* bird mural */
+  .gallery-item-3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 18;
+    grid-row-end: 22;
+  }
+
+  /* lion dancing */
+  .gallery-item-9 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 22;
+    grid-row-end: 30;
+  }
+
+  /* laurel sign  */
+  .gallery-item-2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 30;
+    grid-row-end: 35;
+  }
+
+  /* in front of stove profile*/
+  .gallery-item-6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 30;
+    grid-row-end: 35;
+  }
+
+  /* in front of stove with food*/
+  .gallery-item-7 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 35;
+    grid-row-end: 45;
+    transform: rotate(180deg);
+  }
+
+  /* cocktail sign*/
+  .gallery-item-1 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 35;
+    grid-row-end: 45;
+  }
+
+  .description {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 1;
+  }
+
+
+
+}
